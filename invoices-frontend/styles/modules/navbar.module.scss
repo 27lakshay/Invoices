@@ -1,0 +1,30 @@
+.navbar {
+    height: 80px;
+    background-color: rgba(51, 99, 153, 1);
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    .add_invoice {
+        margin-left: auto;
+        position: relative;
+        bottom: -45px;
+        right: 20px;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        font-size: 4rem;
+        font-family: "Montserrat";
+        font-weight: 300;
+        line-height: 0;
+        padding: 0;
+        background-color: rgba(251, 100, 164, 1);
+        border-radius: 50%;
+        border: none;
+        color: #fff;
+    }
+}

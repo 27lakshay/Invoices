@@ -1,0 +1,29 @@
+.searchbar {
+    padding: 1rem;
+    height: 90px;
+    user-select: none;
+    color: #fff;
+    .search__input__wrapper {
+        display: flex;
+        border: none;
+        background-color: rgba(53, 62, 72, 1);
+        border-radius: 22px;
+        padding: 1rem;
+        width: 100%;
+    }
+    img {
+        width: 20px;
+        height: 20px;
+    }
+    .search__input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        caret-color: #fff;
+        padding-left: 1em;
+        width: 100%;
+    }
+    .search__input:focus {
+        outline: none;
+    }
+}

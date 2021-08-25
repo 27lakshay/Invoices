@@ -1,0 +1,64 @@
+.sidebar {
+    background-color: rgba(47, 55, 64, 1);
+    user-select: none;
+    .invoice__count {
+        height: 40px;
+        text-transform: uppercase;
+        color: rgba(99, 110, 122, 1);
+        padding: 0.5rem 1.5rem;
+        border-bottom: 0.5px solid rgba(58, 66, 77, 1);
+        font-size: 14px;
+        span {
+            color: rgb(127, 143, 160);
+        }
+    }
+    .sidebar__menu__options {
+        max-height: calc(100vh - 210px);
+        overflow-y: scroll;
+        .menu__option {
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            padding: 1.5rem;
+            color: rgba(116, 124, 135, 1);
+            transition: color 0.3s ease, background-color 0.3s ease;
+            border-bottom: 0.5px solid rgba(58, 66, 77, 1);
+            .option__details__left {
+                text-align: left;
+                .detail__invoice_number {
+                    text-transform: uppercase;
+                    padding-bottom: 1rem;
+                    text-align: left;
+                }
+                .detail__no_of_items {
+                    text-transform: capitalize;
+                    padding-bottom: 0.5rem;
+                }
+                .detail__customer_name {
+                    text-transform: capitalize;
+                    color: rgba(102, 167, 255, 1);
+                }
+            }
+            .option__details__right {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: right;
+                .detail__time_and_date {
+                    text-transform: capitalize;
+                    color: rgba(99, 110, 122, 1);
+                }
+                .detail__cost {
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .menu__option:hover {
+            background-color: rgba(64, 75, 87, 1);
+            color: #ffffff;
+        }
+        .menu__option > * {
+            pointer-events: none;
+        }
+    }
+}

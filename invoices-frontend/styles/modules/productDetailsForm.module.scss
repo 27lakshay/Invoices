@@ -1,0 +1,222 @@
+.productdetailsform__wrapper {
+}
+.productdetailsform__header {
+    display: flex;
+    align-items: flex-end;
+    gap: 1em;
+    padding-bottom: 1em;
+    > span {
+        margin-left: auto;
+        p {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    button {
+        background-color: #ffffff;
+        outline: none;
+        padding: 1em;
+        margin-top: auto;
+        border-radius: 4px;
+        color: rgba(102, 167, 255, 255);
+        text-transform: uppercase;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgba(102, 167, 255, 255);
+        gap: 6px;
+        transition: border 0.3s ease;
+        img {
+            background-color: transparent;
+            object-fit: contain;
+            border: none;
+            width: 24px;
+            height: 28px;
+        }
+    }
+    button:hover {
+        background-color: #ffffff;
+    }
+}
+
+.productdetailsform__body {
+    padding: 0 2em;
+    button {
+        background-color: #ffffff;
+        outline: none;
+        border: 2px solid rgba(102, 167, 255, 255);
+        padding: 1em;
+        border-radius: 4px;
+        color: rgba(102, 167, 255, 255);
+        text-transform: uppercase;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        border-radius: 4px;
+        transition: border 0.3s ease;
+        img {
+            background-color: transparent;
+            object-fit: contain;
+            border: none;
+            width: 24px;
+            height: 28px;
+        }
+    }
+    button:hover {
+        background-color: #ffffff;
+    }
+}
+.item__button > * {
+    pointer-events: none;
+}
+.productdetailsform__body {
+    display: flex;
+    flex-direction: column;
+    .invoice__details__table {
+        text-align: center;
+        border-collapse: collapse;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .table__header {
+            color: rgba(196, 201, 210, 1);
+            border-top: 2px solid rgba(196, 201, 210, 0.5);
+            border-bottom: 2px solid rgba(196, 201, 210, 0.5);
+            text-align: center;
+            display: grid;
+            grid-template-columns: 3fr 1.5fr 2fr;
+            label {
+                padding: 0.5em 0;
+                text-transform: uppercase;
+            }
+            :nth-child(1) {
+                text-align: left;
+            }
+        }
+        .table__body {
+            text-align: center;
+            flex-grow: 1;
+            overflow-y: scroll;
+            height: 25vh;
+            // grid-template-columns: 60% 20% 20%;
+            .item__wrapper {
+                position: relative;
+                height: 60px;
+                background-color: rgba(196, 201, 210, 0.5);
+                .item__details {
+                    background-color: #ffffff;
+                    transition: 0.3s ease;
+                    height: 100%;
+                    z-index: 20;
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: 3fr 1.5fr 2fr;
+                    padding: 0.5em 0;
+                    align-content: center;
+                }
+                .item__details :nth-child(1) {
+                    text-align: left;
+                }
+                .item__options {
+                    z-index: 10;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    display: flex;
+                    transform: translateY(-50%);
+                    gap: 1em;
+                    width: 140px;
+                    height: 80%;
+                    :nth-child(2) {
+                        border: 2px solid #e74c3c;
+                        img {
+                            width: 32px;
+                        }
+                    }
+                }
+            }
+            .item__wrapper:hover .item__details {
+                transform: translateX(-150px);
+            }
+        }
+        .table__footer {
+            margin-top: auto;
+            display: grid;
+            grid-template-columns: 3fr 1.5fr 2fr;
+            padding: 0.5em 0;
+            border-bottom: 2px solid rgba(196, 201, 210, 0.3);
+            gap: 1em;
+            > div {
+                display: flex;
+            }
+            .table__body__cells {
+                padding: 0.5em 0;
+                color: rgba(196, 201, 210, 1);
+                outline: none;
+                border: 2px solid rgba(196, 201, 210, 1);
+                border-radius: 4px;
+                padding: 0.5em 1em;
+                width: 100%;
+            }
+            .cell_with_button {
+                display: flex;
+                gap: 1em;
+            }
+        }
+    }
+    > :nth-child(3) {
+        padding: 0.5em 0;
+        color: rgba(196, 201, 210, 1);
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        span:after {
+            content: "\0025";
+            color: #000;
+            position: relative;
+            left: -24px;
+        }
+        input {
+            outline: none;
+            border: 2px solid rgba(196, 201, 210, 1);
+            border-radius: 4px;
+            padding: 0.5em;
+        }
+        > :nth-child(3) {
+            margin-left: auto;
+        }
+    }
+}
+.productdetailsform__footer {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(238, 240, 242, 1);
+    padding: 1em 2em;
+    span {
+        display: flex;
+        flex-direction: column;
+    }
+    :nth-child(3) {
+        margin-left: auto;
+    }
+    button {
+        background-color: rgb(100, 164, 252);
+        outline: none;
+        border: none;
+        padding: 1em 3em;
+        border-radius: 4px;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+    button:hover {
+        background-color: rgb(41, 130, 255);
+    }
+}
