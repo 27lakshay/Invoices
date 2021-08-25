@@ -1,0 +1,99 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+        sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* outline: 1px solid red; */
+}
+
+input,
+textarea {
+    font: inherit;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+}
+button {
+    font-family: "Poppins", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.page__wrapper {
+    display: grid;
+    grid-template-columns: 360px auto;
+    min-height: calc(100vh - 80px);
+}
+
+.main__wrapper {
+    background-color: #fff;
+}
+/* 
+.backdrop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.modal {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    display: grid;
+    grid-auto-rows: 10% 70% 20%;
+    width: clamp(310px, 60vw, 992px);
+    height: 60vh;
+} */
+:root {
+    --somekeyword: rgba(196, 201, 210, 0.5);
+    /* --somekeyword: red; */
+}
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: var(--somekeyword);
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: var(--somekeyword);
+    opacity: 1;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: var(--somekeyword);
+    opacity: 1;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: var(--somekeyword);
+}
+*::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--somekeyword);
+}
+*::placeholder {
+    /* modern browser */
+    color: var(--somekeyword);
+}
